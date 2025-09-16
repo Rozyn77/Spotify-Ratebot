@@ -53,3 +53,5 @@ This Discord bot automates and manages a song rating game. Instead of relying on
 * **Visual improvements** like functional buttons for rating the song and or features like sending direct spotify link etc.
 * **Actualy hosting the bot and making it available without the need for seting it up yourself**
 * **Switching from outdated "!" prefix to the current "/" Discord command integration**
+
+### YES, its 90% written by AI, BUT it works!
