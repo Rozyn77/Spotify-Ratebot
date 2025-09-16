@@ -1,53 +1,46 @@
-Discord Music Rating Bot
+# Discord Music Rating Bot
 
 This Discord bot automates and manages a song rating game. Instead of relying on external APIs, it cleverly monitors user activity on Discord to automatically detect the currently playing Spotify track, then allows other players to rate it using emojis.
 
-Features
+---
 
-    Automated Song Detection: The bot identifies and displays song details (title, artist, album art) directly from a user's active Spotify status on Discord.
+### Key Features
 
-    Emoji-Based Rating System: Participants can rate songs on a scale from 0 to 10 using emoji reactions.
+* **Automated Song Detection:** The bot identifies and displays song details (title, artist, album art) from an active user's Spotify status.
+* **Emoji-Based Rating System:** Participants can rate songs on a scale from 0 to 10 using emoji reactions.
+* **Scorekeeping & Leaderboard:** The bot calculates average ratings for each song and compiles a final leaderboard for all participants, as well as a list of the highest-rated songs.
+* **Spam Prevention:** The bot includes a system to prevent rating spam, with a mechanism to disqualify repeat offenders.
+* **Game Flow Automation:** It manages the entire game process, from player registration and song submission to the final score tally.
 
-    Scorekeeping & Leaderboard: The bot calculates average ratings for each song and compiles a final leaderboard for all participants, as well as a list of the highest-rated songs.
+---
 
-    Game Flow Automation: It manages the entire game process, from player registration and song submission to the final score tally.
+### Quick Start
 
-    Spam Prevention: The bot includes a system to prevent spamming of ratings, with a mechanism to disqualify repeat offenders.
+#### Prerequisites
+* Python 3.8+
+* The `discord.py` library (version 2.x)
 
-How to Use
-
-Prerequisites
-
-    Python 3.8+
-
-    The discord.py library (version 2.x)
-
-Installation
-
-    Clone the repository:
-    Bash
-
-git clone https://github.com/YourUsername/your-repository-name.git
-cd your-repository-name
-
-Install the required libraries:
-Bash
-
-pip install discord.py
-
-Replace the placeholder TOKEN in main.py with your actual bot token from the Discord Developer Portal. For security, it's highly recommended to use environment variables to store your token.
-
-Run the bot:
-Bash
-
+#### Installation & Setup
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/Rozyn77/Spotify-Ratebot.git
+    cd Spotify-Ratebot
+    ```
+2.  Install the required libraries:
+    ```bash
+    pip install discord.py
+    ```
+3.  Replace the placeholder `TOKEN` in `main.py` with your actual bot token.
+4.  Run the bot:
+    ```bash
     python main.py
+    ```
 
-Bot Commands
+---
 
-    !start_game [number_of_songs_per_host] - Starts the game registration phase. Players can join by reacting with a specified emoji.
+### In-Game Commands
 
-    !end_registration - Ends the registration and begins the game with the registered players.
-
-    !next_song - Allows the current host or an administrator to move on to the next song in the round.
-
-    !end_game - Immediately ends the current game and displays the final results.
+* `!start_game [number_of_songs]` - Starts the game registration. Players can join by reacting with an emoji.
+* `!end_registration` - Ends the registration and begins the game.
+* `!next_song` - Allows the current host or an administrator to move on to the next song.
+* `!end_game` - Immediately ends the game and displays the final rankings.
