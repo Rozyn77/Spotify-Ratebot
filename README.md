@@ -1,6 +1,6 @@
 # Discord Music Rating Bot
 
-This Discord bot automates and manages a song rating game. Instead of relying on external APIs, it cleverly monitors user activity on Discord to automatically detect the currently playing Spotify track, then allows other players to rate it using emojis.
+This Discord bot automates and manages a song rating game. Monitors user activity on Discord to automatically detect the currently playing Spotify track, then allows other players to rate it using emojis.
 
 ---
 # **⚠This bot is currently only available in Polish and contains potential visual glitches/delays.⚠**
